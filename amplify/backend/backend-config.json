@@ -1,0 +1,27 @@
+{
+    "api": {
+        "AmplifyAPI": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+                        "userPoolConfig": {
+                            "userPoolId": "authrnamplify784b3bc5"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "auth": {
+        "rnamplify784b3bc5": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    }
+}
